@@ -42,4 +42,4 @@ yarn dev
 
 ![Preview page](/public/images/page.png)
 
-*View Live [here](https://recapios.vercel.app/)*
+*View Live [here](https://recapioz.vercel.app/)*
