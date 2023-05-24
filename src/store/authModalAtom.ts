@@ -2,7 +2,6 @@ import { atom } from 'jotai'
 
 export enum AuthModalView {
   logIn = 'logIn',
-  signInWithLink = 'signInWithLink',
   signUp = 'signUp',
   resetPassword = 'resetPassword',
 }
