@@ -24,7 +24,7 @@ const AuthButtons: React.FC = () => {
         <Button
           maxWidth="300px"
           mx="auto"
-          variant="solid"
+          variant="ghost"
           onClick={() => signOut(auth)}
         >
           Log Out
