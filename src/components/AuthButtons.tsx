@@ -11,7 +11,7 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 
 const AuthButtons: React.FC = () => {
   const setAuthModalState = useSetAtom(authModalAtom)
-  const [user] = useAuthState(auth)
+  const [currentUser] = useAuthState(auth)
 
   return (
     <Flex
@@ -20,7 +20,7 @@ const AuthButtons: React.FC = () => {
       gap={5}
       w="full"
     >
-      {user ? (
+      {currentUser ? (
         <Button
           maxWidth="300px"
           mx="auto"
