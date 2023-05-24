@@ -40,14 +40,13 @@ const AuthModal: React.FC = () => {
 
   return (
     <>
-      <Modal isOpen={modalState.open} onClose={handleClose} size="lg">
+      <Modal isOpen={modalState.open} onClose={handleClose} size="lg" motionPreset='scale'>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader textAlign="center" color="ocean-dark">
             {modalState.view === AuthModalView.logIn && 'Log In'}
             {modalState.view === AuthModalView.signUp && 'Sign Up'}
-            {modalState.view === AuthModalView.resetPassword &&
-              'Reset Password'}
+            {modalState.view === AuthModalView.resetPassword && 'Reset Password'}
           </ModalHeader>
 
           <ModalCloseButton fill="ocean-dark" />
@@ -105,8 +104,7 @@ const AuthModal: React.FC = () => {
               >
                 {modalState.view === AuthModalView.signUp && 'Log In'}
                 {modalState.view === AuthModalView.logIn && 'Create an account'}
-                {(modalState.view === AuthModalView.resetPassword ||
-                  modalState.view === AuthModalView.signInWithLink) &&
+                {modalState.view === AuthModalView.resetPassword &&
                   '< Back to Log In'}
               </Link>
               {(modalState.view === AuthModalView.signUp ||
